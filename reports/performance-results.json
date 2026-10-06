@@ -1,0 +1,1602 @@
+{
+  "createdAt": "2026-10-06T18:55:36.765Z",
+  "environment": {
+    "os": "Windows_NT",
+    "release": "10.0.22631",
+    "arch": "x64",
+    "cpu": "13th Gen Intel(R) Core(TM) i9-13900HX",
+    "logicalCPUs": 32,
+    "totalMemoryBytes": 34158272512,
+    "node": "v22.21.1",
+    "browser": "154.0.4258.53"
+  },
+  "method": {
+    "fixture": "four synthetic text pages, 600 x 800 points",
+    "trialsPerVariant": 10,
+    "warmupPerVariant": 1,
+    "order": "warmup A B; measured A B B A repeated 5 times",
+    "context": "fresh browser context for every trial; one persistent browser; HTTP no-store; OS and process caches not reset",
+    "render": "six sequential loadCanvasAsync calls, pages 2-4 at zoom 1 and 1.5; measured as total elapsed ms",
+    "scope": "isolated Edge WebViewer, not full Obsidian; original .mem; only one wasm resource differs"
+  },
+  "decompression": {
+    "baseline": {
+      "compressedBytes": 1928136,
+      "uncompressedBytes": 8562811,
+      "sha256": "70f9a494f6cc545d3263b96534d4a8a2fb31e1a68e97202b4220e07da027d9aa",
+      "milliseconds": {
+        "n": 20,
+        "median": 23.91640000000004,
+        "q1": 23.245424999999997,
+        "q3": 25.446674999999985,
+        "min": 22.369300000000067,
+        "max": 30.162000000000035
+      }
+    },
+    "modified": {
+      "compressedBytes": 2306183,
+      "uncompressedBytes": 8563197,
+      "sha256": "1e84fe722d94d905edc4110597ebb73c0ba0cf639fdba952240c8c70076d07ab",
+      "milliseconds": {
+        "n": 20,
+        "median": 23.012950000000046,
+        "q1": 21.91139999999993,
+        "q3": 23.713700000000074,
+        "min": 21.471400000000017,
+        "max": 25.787699999999973
+      }
+    }
+  },
+  "results": [
+    {
+      "index": 0,
+      "variant": "baseline",
+      "warmup": true,
+      "version": 0,
+      "instanceMs": 379.8999999985099,
+      "documentMs": 632.7000000029802,
+      "firstPageMs": 822.6000000014901,
+      "sixRendersMs": 109,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 23.5,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 12.399999998509884,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 12.299999997019768,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 19.700000002980232,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 22.69999999552965,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 18.400000005960464,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 1,
+      "variant": "modified",
+      "warmup": true,
+      "version": 3,
+      "instanceMs": 301.59999999403954,
+      "documentMs": 558.1999999955297,
+      "firstPageMs": 743.5999999940395,
+      "sixRendersMs": 94.70000000298023,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 19.399999998509884,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 12,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 11.600000001490116,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 16.80000000447035,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 15.299999997019768,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 19.600000001490116,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 2,
+      "variant": "baseline",
+      "warmup": false,
+      "version": 0,
+      "instanceMs": 299.5,
+      "documentMs": 551.7000000029802,
+      "firstPageMs": 742,
+      "sixRendersMs": 109.5,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 23.5,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 11.799999997019768,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 12.5,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 19,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 17.799999997019768,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 24.900000005960464,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 3,
+      "variant": "modified",
+      "warmup": false,
+      "version": 3,
+      "instanceMs": 308.5,
+      "documentMs": 569.2999999970198,
+      "firstPageMs": 752.3999999985099,
+      "sixRendersMs": 100.19999999552965,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 12.5,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 21.299999997019768,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 17,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 17,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 15.700000002980232,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 16.69999999552965,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 4,
+      "variant": "modified",
+      "warmup": false,
+      "version": 3,
+      "instanceMs": 304.09999999403954,
+      "documentMs": 562.5,
+      "firstPageMs": 748.7999999970198,
+      "sixRendersMs": 98.90000000596046,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 12.600000001490116,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 17.600000001490116,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 19.200000002980232,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 17.799999997019768,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 16.399999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 15.300000004470348,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 5,
+      "variant": "baseline",
+      "warmup": false,
+      "version": 0,
+      "instanceMs": 299.30000000447035,
+      "documentMs": 549.3999999985099,
+      "firstPageMs": 738,
+      "sixRendersMs": 119.5,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 25.600000001490116,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 22.5,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 12,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 19.5,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 19,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 20.799999997019768,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 6,
+      "variant": "baseline",
+      "warmup": false,
+      "version": 0,
+      "instanceMs": 296.09999999403954,
+      "documentMs": 549.5999999940395,
+      "firstPageMs": 740.2999999970198,
+      "sixRendersMs": 109.39999999850988,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 22.799999997019768,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 12.200000002980232,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 12.699999995529652,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 20.30000000447035,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 22.600000001490116,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 18.799999997019768,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 7,
+      "variant": "modified",
+      "warmup": false,
+      "version": 3,
+      "instanceMs": 304.70000000298023,
+      "documentMs": 564.8000000044703,
+      "firstPageMs": 745.6000000014901,
+      "sixRendersMs": 92.5,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 21.19999999552965,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 12,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 12,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 16.899999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 15.700000002980232,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 14.700000002980232,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 8,
+      "variant": "modified",
+      "warmup": false,
+      "version": 3,
+      "instanceMs": 305.8999999985099,
+      "documentMs": 567,
+      "firstPageMs": 752.3999999985099,
+      "sixRendersMs": 101.10000000149012,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 23.30000000447035,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 11.299999997019768,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 11.899999998509884,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 17.5,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 15.700000002980232,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 21.399999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 9,
+      "variant": "baseline",
+      "warmup": false,
+      "version": 0,
+      "instanceMs": 298.59999999403954,
+      "documentMs": 549.1999999955297,
+      "firstPageMs": 737.3999999985099,
+      "sixRendersMs": 112,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 26.100000001490116,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 12.299999997019768,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 12.899999998509884,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 19.400000005960464,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 18.19999999552965,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 23.100000001490116,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 10,
+      "variant": "baseline",
+      "warmup": false,
+      "version": 0,
+      "instanceMs": 304.3999999985099,
+      "documentMs": 555.1000000014901,
+      "firstPageMs": 745.2999999970198,
+      "sixRendersMs": 106.69999999552965,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 22.19999999552965,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 12.400000005960464,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 13,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 18.899999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 17.69999999552965,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 22.5,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 11,
+      "variant": "modified",
+      "warmup": false,
+      "version": 3,
+      "instanceMs": 302.5,
+      "documentMs": 581.1000000014901,
+      "firstPageMs": 763.1000000014901,
+      "sixRendersMs": 91.5,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 20.200000002980232,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 12.5,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 11.299999997019768,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 16.899999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 15.400000005960464,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 15.199999995529652,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 12,
+      "variant": "modified",
+      "warmup": false,
+      "version": 3,
+      "instanceMs": 318.20000000298023,
+      "documentMs": 579.2999999970198,
+      "firstPageMs": 760.7999999970198,
+      "sixRendersMs": 92.40000000596046,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 20.700000002980232,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 11,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 11.600000001490116,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 17.100000001490116,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 15.399999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 16.600000001490116,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 13,
+      "variant": "baseline",
+      "warmup": false,
+      "version": 0,
+      "instanceMs": 309.40000000596046,
+      "documentMs": 561,
+      "firstPageMs": 756.7000000029802,
+      "sixRendersMs": 108.80000000447035,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 22,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 12.300000004470348,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 13.600000001490116,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 19.80000000447035,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 22.299999997019768,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 18.600000001490116,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 14,
+      "variant": "baseline",
+      "warmup": false,
+      "version": 0,
+      "instanceMs": 310.3999999985099,
+      "documentMs": 561.7999999970198,
+      "firstPageMs": 757.8999999985099,
+      "sixRendersMs": 107.29999999701977,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 21.899999998509884,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 12,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 12.700000002980232,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 19.399999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 22.700000002980232,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 18.599999994039536,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 15,
+      "variant": "modified",
+      "warmup": false,
+      "version": 3,
+      "instanceMs": 321,
+      "documentMs": 605,
+      "firstPageMs": 791.5,
+      "sixRendersMs": 104.70000000298023,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 27.30000000447035,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 11.199999995529652,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 11.5,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 17.399999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 16,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 21.200000002980232,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 16,
+      "variant": "modified",
+      "warmup": false,
+      "version": 3,
+      "instanceMs": 311.69999999552965,
+      "documentMs": 571.0999999940395,
+      "firstPageMs": 754.8999999985099,
+      "sixRendersMs": 96.60000000149012,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 21.100000001490116,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 11.200000002980232,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 11.5,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 16.899999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 15.600000001490116,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 20.299999997019768,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 17,
+      "variant": "baseline",
+      "warmup": false,
+      "version": 0,
+      "instanceMs": 312.3999999985099,
+      "documentMs": 568.8999999985099,
+      "firstPageMs": 764.3999999985099,
+      "sixRendersMs": 114.20000000298023,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 24.80000000447035,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 12.599999994039536,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 15.800000004470348,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 20.100000001490116,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 22.19999999552965,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 18.700000002980232,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 18,
+      "variant": "baseline",
+      "warmup": false,
+      "version": 0,
+      "instanceMs": 309.8999999985099,
+      "documentMs": 564.1999999955297,
+      "firstPageMs": 758.5,
+      "sixRendersMs": 109.5,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 23.399999998509884,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 12.5,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 12.600000001490116,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 19.899999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 22.899999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 18.100000001490116,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 19,
+      "variant": "modified",
+      "warmup": false,
+      "version": 3,
+      "instanceMs": 313.3999999985099,
+      "documentMs": 582.7999999970198,
+      "firstPageMs": 765.2999999970198,
+      "sixRendersMs": 98.10000000149012,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 21.700000002980232,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 11.5,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 12,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 16.799999997019768,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 16.30000000447035,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 19.799999997019768,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 20,
+      "variant": "modified",
+      "warmup": false,
+      "version": 3,
+      "instanceMs": 315.69999999552965,
+      "documentMs": 594.1999999955297,
+      "firstPageMs": 776.6999999955297,
+      "sixRendersMs": 95.90000000596046,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 24.30000000447035,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 11.699999995529652,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 11.700000002980232,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 16.5,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 16.299999997019768,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 15.400000005960464,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    },
+    {
+      "index": 21,
+      "variant": "baseline",
+      "warmup": false,
+      "version": 0,
+      "instanceMs": 304.30000000447035,
+      "documentMs": 560.3999999985099,
+      "firstPageMs": 759.2000000029802,
+      "sixRendersMs": 122,
+      "renders": [
+        {
+          "page": 2,
+          "zoom": 1,
+          "ms": 17.5,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1,
+          "ms": 31.899999998509884,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1,
+          "ms": 12.100000001490116,
+          "dimensions": [
+            600,
+            800
+          ]
+        },
+        {
+          "page": 2,
+          "zoom": 1.5,
+          "ms": 19.899999998509884,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 3,
+          "zoom": 1.5,
+          "ms": 23.5,
+          "dimensions": [
+            900,
+            1200
+          ]
+        },
+        {
+          "page": 4,
+          "zoom": 1.5,
+          "ms": 17.100000001490116,
+          "dimensions": [
+            900,
+            1200
+          ]
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "summary": {
+    "baseline": {
+      "instanceMs": {
+        "n": 10,
+        "median": 304.3500000014901,
+        "q1": 299.35000000335276,
+        "q3": 309.77500000037253,
+        "min": 296.09999999403954,
+        "max": 312.3999999985099
+      },
+      "documentMs": {
+        "n": 10,
+        "median": 557.75,
+        "q1": 550.1249999962747,
+        "q3": 561.5999999977648,
+        "min": 549.1999999955297,
+        "max": 568.8999999985099
+      },
+      "firstPageMs": {
+        "n": 10,
+        "median": 751,
+        "q1": 740.7249999977648,
+        "q3": 758.3499999996275,
+        "min": 737.3999999985099,
+        "max": 764.3999999985099
+      },
+      "sixRendersMs": {
+        "n": 10,
+        "median": 109.5,
+        "q1": 108.95000000298023,
+        "q3": 113.65000000223517,
+        "min": 106.69999999552965,
+        "max": 122
+      }
+    },
+    "modified": {
+      "instanceMs": {
+        "n": 10,
+        "median": 310.0999999977648,
+        "q1": 305.00000000186265,
+        "q3": 315.1249999962747,
+        "min": 302.5,
+        "max": 321
+      },
+      "documentMs": {
+        "n": 10,
+        "median": 575.1999999955297,
+        "q1": 567.5749999992549,
+        "q3": 582.3749999981374,
+        "min": 562.5,
+        "max": 605
+      },
+      "firstPageMs": {
+        "n": 10,
+        "median": 757.8499999977648,
+        "q1": 752.3999999985099,
+        "q3": 764.7499999981374,
+        "min": 745.6000000014901,
+        "max": 791.5
+      },
+      "sixRendersMs": {
+        "n": 10,
+        "median": 97.35000000149012,
+        "q1": 93.35000000149012,
+        "q3": 99.87499999813735,
+        "min": 91.5,
+        "max": 104.70000000298023
+      }
+    }
+  },
+  "percentChange": {
+    "instanceMs": 1.8892722182508814,
+    "documentMs": 3.1286418638331925,
+    "firstPageMs": 0.9121171767995762,
+    "sixRendersMs": -11.095890409598063
+  }
+}
